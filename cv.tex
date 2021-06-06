@@ -1,0 +1,479 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\definecolor{mygray}{gray}{0.4}
+\definecolor{mygraybox}{gray}{0.99}
+\definecolor{mygrayboxborder}{gray}{0.8}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    allcolors = blue
+}
+
+%% Multi column layout
+%% See: https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html
+
+\newenvironment{cols}[1][]{}{}
+
+\newenvironment{col}[1]{\begin{minipage}{#1}\ignorespaces}{%
+\end{minipage}
+\ifhmode\unskip\fi
+\aftergroup\useignorespacesandallpars}
+
+\def\useignorespacesandallpars#1\ignorespaces\fi{%
+#1\fi\ignorespacesandallpars}
+
+\makeatletter
+\def\ignorespacesandallpars{%
+  \@ifnextchar\par
+    {\expandafter\ignorespacesandallpars\@gobble}%
+    {}%
+}
+\makeatother
+
+%% Modify \section so that it automatically includes a line below
+
+\newcommand{\sectionline}{%
+  \vspace{-0.2cm}%
+  \hrule%
+  \vspace{0.3cm}%
+}
+
+\let\xsection=\section
+\renewcommand{\section}[1]{%
+  \xsection*{#1}%
+  \sectionline%
+}
+
+
+%% Create box for contact info
+\usepackage{tcolorbox}
+
+\newtcolorbox{blackbox}{
+  colback=mygraybox,
+  colframe=mygrayboxborder,
+  coltext=black,
+  boxsep=2pt,
+  arc=4pt}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\begin{center}
+\huge{Etienne Bacher}
+\vspace{0.2cm}
+
+\Large{\textcolor{mygray}{PhD student in Economics of Migration}}
+\end{center}
+
+\begin{blackbox}
+
+\begin{center}
+\textbf{\emph{Contact}}
+
+\end{center}
+
+\begin{cols}
+
+\begin{col}{0.05\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.35\textwidth}
+\faEnvelope \hspace{0.1cm}
+\href{mailto:etienne.bacher@liser.lu}{etienne.bacher@liser.lu}
+
+\end{col}
+
+\begin{col}{0.30\textwidth}
+\faGlobe \hspace{0.1cm}
+\href{https://www.etiennebacher.com/}{etiennebacher.com}
+
+\end{col}
+
+\begin{col}{0.25\textwidth}
+\faGithub \hspace{0.1cm}
+\href{https://github.com/etiennebacher/}{etiennebacher}
+
+\end{col}
+
+\end{cols}
+
+\end{blackbox}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+2020 -- current
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.55\textwidth}
+PhD Candidate in Economics
+
+\end{col}
+
+\begin{col}{0.25\textwidth}
+
+\begin{flushright}
+\textcolor{mygray}{LISER, Luxembourg}
+
+\end{flushright}
+
+\end{col}
+
+\end{cols}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.8\textwidth}
+
+\begin{itemize}
+\tightlist
+\item
+  Topic: ``Cross-border labor mobility, attitudes and political
+  preferences''
+\item
+  Member of Doctoral Training Unit ACROSS
+\item
+  Supervisors: Michel Tenikue, Michel Beine
+\end{itemize}
+
+\end{col}
+
+\end{cols}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+2018 -- 2020
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.55\textwidth}
+Master's Degree for Research in Development Economics
+
+\end{col}
+
+\begin{col}{0.25\textwidth}
+
+\begin{flushright}
+\textcolor{mygray}{UCA, Clermont-Ferrand, France}
+
+\end{flushright}
+
+\end{col}
+
+\end{cols}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.8\textwidth}
+
+\begin{itemize}
+\tightlist
+\item
+  Master's thesis~: ``Immigration and altruistic behavior: a comparison
+  of immigrants' and natives' vote''. Use of survey data and
+  microeconometric methods (Heckman correction and matching methods)
+  using R.
+\item
+  Other work~: ``Financial development and income inequalities: a
+  cross-sectional analysis''. Statistical analysis with a Principal
+  Components Analysis, use of cross-sectional data estimators with R and
+  Stata.
+\end{itemize}
+
+\end{col}
+
+\end{cols}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+2017 -- 2018
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.55\textwidth}
+Bachelor's Degree in Development Economics
+
+\end{col}
+
+\begin{col}{0.25\textwidth}
+
+\begin{flushright}
+\textcolor{mygray}{UCA, Clermont-Ferrand, France}
+
+\end{flushright}
+
+\end{col}
+
+\end{cols}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.8\textwidth}
+
+\begin{itemize}
+\tightlist
+\item
+  ``Does urbanization significantly impact economic growth?''. Use of
+  cross-sectional data estimators with EViews.
+\item
+  ``Poverty study in Malawi (2010-2013): a monetary approach''.
+  Statistical analysis using base R and survey data.
+\end{itemize}
+
+\end{col}
+
+\end{cols}
+
+\hypertarget{professional-experience}{%
+\section{Professional experience}\label{professional-experience}}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+2020 \newline(2 months)
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.55\textwidth}
+Internship as research assistant
+
+\end{col}
+
+\begin{col}{0.25\textwidth}
+
+\begin{flushright}
+\textcolor{mygray}{CERDI, Clermont-Ferrand, France}
+
+\end{flushright}
+
+\end{col}
+
+\end{cols}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.8\textwidth}
+
+\begin{itemize}
+\tightlist
+\item
+  Built a dataset on the sovereignty of small islands.
+\item
+  Created an application with R Shiny to explore this dataset.
+\end{itemize}
+
+\end{col}
+
+\end{cols}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+2019 \newline(2 months)
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.55\textwidth}
+Internship as research assistant
+
+\end{col}
+
+\begin{col}{0.25\textwidth}
+
+\begin{flushright}
+\textcolor{mygray}{High-Commission for Planning, Rabat, Morocco}
+
+\end{flushright}
+
+\end{col}
+
+\end{cols}
+
+\begin{cols}
+
+\begin{col}{0.15\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.03\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.8\textwidth}
+
+\begin{itemize}
+\tightlist
+\item
+  Production of a report: ``Labor market and poverty in Morocco'' (in
+  French \& English)
+\item
+  Made the literature review, treated survey data, applied Econometric
+  methods (logistic regression, probit model) using Stata on about
+  200,000 observations, and participated to the redaction.
+\end{itemize}
+
+\end{col}
+
+\end{cols}
+
+\hypertarget{conferences}{%
+\section{Conferences}\label{conferences}}
+
+\textbf{2021}: Population Association of America (Discussant)
+
+\hypertarget{computer-skills}{%
+\section{Computer skills}\label{computer-skills}}
+
+\textbf{Advanced:} R
+
+\textbf{Intermediate:} Stata, LaTeX, HTML, CSS
+
+\textbf{Basic:} Matlab, GAMS
+
+\hypertarget{languages}{%
+\section{Languages}\label{languages}}
+
+French (native), English (fluent), Spanish (basic)
+
+\end{document}

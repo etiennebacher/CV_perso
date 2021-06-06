@@ -1,0 +1,180 @@
+---
+output:
+  rmarkdown::pdf_document:
+    includes:
+      in_header: "preamble.tex"
+    keep_tex: true
+---
+
+```{r echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(dplyr)
+
+entries <- read.csv("entries.csv")
+```
+
+\begin{center}
+\huge{Etienne Bacher}
+\vspace{0.2cm}
+
+\Large{\textcolor{mygray}{PhD student in Economics of Migration}}
+\end{center}
+
+:::: {.blackbox data-latex=""}
+:::{.center data-latex=""}
+***Contact***
+:::
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+:::
+::: {.col data-latex="{0.35\textwidth}"}
+\faEnvelope \hspace{0.1cm} \href{mailto:etienne.bacher@liser.lu}{etienne.bacher@liser.lu}
+:::
+::: {.col data-latex="{0.30\textwidth}"}
+\faGlobe \hspace{0.1cm} \href{https://www.etiennebacher.com/}{etiennebacher.com} 
+:::
+::: {.col data-latex="{0.25\textwidth}"}
+\faGithub \hspace{0.1cm} \href{https://github.com/etiennebacher/}{etiennebacher} 
+:::
+:::
+::::
+
+
+# Education
+
+```{r, results='asis'}
+entries_educ <- entries %>%
+  filter(type == "education")
+
+for (i in 1:nrow(entries_educ)) {
+  tmp <- entries_educ[i, ] %>% 
+    select(where(~ .x != ""))
+  tmp_details <- tmp[which(grepl("detail", names(tmp)))]
+  cat('
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.15\\textwidth}"}\n',
+tmp$year1, " -- ", tmp$year2,
+'
+:::
+::: {.col data-latex="{0.03\\textwidth}"}
+\\ 
+:::
+::: {.col data-latex="{0.55\\textwidth}"}\n',
+tmp$title,
+'
+:::
+::: {.col data-latex="{0.25\\textwidth}"}
+::: {.flushright data-latex=""}\n',
+"\\textcolor{mygray}{", tmp$institution, ", ", tmp$place, "}",
+'
+:::
+:::
+:::
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.15\\textwidth}"}
+\\ 
+:::
+::: {.col data-latex="{0.03\\textwidth}"}
+\\ 
+:::
+::: {.col data-latex="{0.8\\textwidth}"}\n',
+paste("* ", tmp_details, collapse = "\n"),
+'
+:::
+:::
+',
+sep = ""
+  )
+}
+```
+
+# Professional experience
+
+```{r, results='asis'}
+entries_pro <- entries %>%
+  filter(type == "professional_experience")
+
+for (i in 1:nrow(entries_pro)) {
+  
+  tmp <- entries_pro[i, ] %>% 
+    select(where(~ .x != ""))
+  
+  tmp_details <- tmp[which(grepl("detail", names(tmp)))]
+  
+  if (tmp$year1 == as.numeric(substr(tmp$year2, 1, 4))) {
+    time <- tmp$year2 # year2 to get the duration too
+  } else { 
+    time <- paste0(tmp$year1, " -- ", tmp$year2)
+  }
+  
+  cat('
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.15\\textwidth}"}\n',
+time,
+'
+:::
+::: {.col data-latex="{0.03\\textwidth}"}
+\\ 
+:::
+::: {.col data-latex="{0.55\\textwidth}"}\n',
+tmp$title,
+'
+:::
+::: {.col data-latex="{0.25\\textwidth}"}
+::: {.flushright data-latex=""}\n',
+"\\textcolor{mygray}{", tmp$institution, ", ", tmp$place, "}",
+'
+:::
+:::
+:::
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.15\\textwidth}"}
+\\ 
+:::
+::: {.col data-latex="{0.03\\textwidth}"}
+\\ 
+:::
+::: {.col data-latex="{0.8\\textwidth}"}\n',
+paste("* ", tmp_details, collapse = "\n"),
+'
+:::
+:::
+',
+sep = ""
+  )
+}
+```
+
+
+# Conferences
+
+```{r, results='asis'}
+entries_conf <- entries %>%
+  filter(type == "conference")
+
+for (i in unique(entries_conf$year1)) {
+  tmp <- entries_conf %>% 
+    select(where(~ .x != "")) %>% 
+    filter(year1 == i)
+
+  cat(
+    "**", tmp$year1, "**: ", paste0(tmp$title, " (", tmp$detail1, ")"),
+    sep = ""
+  )
+}
+```
+
+
+# Computer skills
+
+**Advanced:** R
+
+**Intermediate:** Stata, LaTeX, HTML, CSS
+
+**Basic:** Matlab, GAMS
+
+
+# Languages
+
+French (native), English (fluent), Spanish (basic)
