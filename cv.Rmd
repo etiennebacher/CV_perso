@@ -178,3 +178,8 @@ for (i in unique(entries_conf$year1)) {
 # Languages
 
 French (native), English (fluent), Spanish (basic)
+
+
+
+\vspace{2cm}
+\noindent\myrulefill \hspace{0.3cm} CV last updated on `r format(Sys.Date(), format="%B %d, %Y")`\hspace{0.3cm} \myrulefill\par

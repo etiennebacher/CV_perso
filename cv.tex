@@ -115,6 +115,11 @@
   coltext=black,
   boxsep=2pt,
   arc=4pt}
+  
+%% Text in the middle of a rule (see bottom of CV)
+\makeatletter
+\def\myrulefill{\leavevmode\leaders\hrule height .7ex width 1ex depth -0.6ex\hfill\kern\z@}
+\makeatother
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -475,5 +480,12 @@ Internship as research assistant
 \section{Languages}\label{languages}}
 
 French (native), English (fluent), Spanish (basic)
+
+\vspace{2cm}
+
+\noindent\myrulefill \hspace{0.3cm} CV last updated on June 07,
+2021\hspace{0.3cm} \myrulefill
+
+\par
 
 \end{document}
