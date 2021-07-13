@@ -1,4 +1,5 @@
 ---
+font: TeX Gyre Pagella
 output:
   rmarkdown::pdf_document:
     includes:
