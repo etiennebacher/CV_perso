@@ -1,17 +1,16 @@
 ---
-font: TeX Gyre Pagella
 output:
   rmarkdown::pdf_document:
-    includes:
-      in_header: "preamble.tex"
+    template: template.tex
     keep_tex: true
+geometry: margin=2cm
 ---
 
 ```{r echo = FALSE, message = FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(dplyr)
 
-entries <- read.csv("entries.csv")
+entries <- read.csv("entries.csv", sep = ";")
 ```
 
 \begin{center}
@@ -185,6 +184,11 @@ French (native), English (fluent), Spanish (basic)
 
 
 \vspace{2cm}
+
+
+```{r}
+Sys.setlocale("LC_TIME", "English") # for date below
+```
 
 \begin{center}
 CV last updated on `r format(Sys.Date(), format="%B %d, %Y")`

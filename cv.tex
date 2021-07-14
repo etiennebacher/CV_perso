@@ -1,68 +1,13 @@
-% Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode}{hyperref}
-\PassOptionsToPackage{hyphens}{url}
-%
-\documentclass[
-]{article}
-\usepackage{amsmath,amssymb}
-\usepackage{lmodern}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
-  \usepackage{unicode-math}
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-% Use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
-\usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
-\usepackage[margin=1in]{geometry}
-\usepackage{graphicx}
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-% Set default figure placement to htbp
-\makeatletter
-\def\fps@figure{htbp}
-\makeatother
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\documentclass{article}
+
+\usepackage{tgpagella}
 \usepackage{fontawesome}
 \usepackage{ragged2e}
 \usepackage{xcolor}
 \definecolor{mygray}{gray}{0.4}
 \definecolor{mygraybox}{gray}{0.99}
 \definecolor{mygrayboxborder}{gray}{0.8}
+\usepackage[margin=2cm]{geometry}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -120,15 +65,15 @@
 \makeatletter
 \def\myrulefill{\leavevmode\leaders\hrule height .7ex width 1ex depth -0.6ex\hfill\kern\z@}
 \makeatother
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 
-\author{}
-\date{\vspace{-2.5em}}
+%% Correct a pandoc bug
+%% https://tex.stackexchange.com/a/257464
+\def\tightlist{}
 
+
+    
 \begin{document}
-
+    
 \begin{center}
 \huge{Etienne Bacher}
 \vspace{0.2cm}
@@ -277,12 +222,12 @@ Master's Degree for Research in Development Economics
 \begin{itemize}
 \tightlist
 \item
-  Master's thesis~: ``Immigration and altruistic behavior: a comparison
+  Master's thesis: ``Immigration and altruistic behavior: a comparison
   of immigrants' and natives' vote''. Use of survey data and
   microeconometric methods (Heckman correction and matching methods)
   using R.
 \item
-  Other work~: ``Financial development and income inequalities: a
+  Other work: ``Financial development and income inequalities: a
   cross-sectional analysis''. Statistical analysis with a Principal
   Components Analysis, use of cross-sectional data estimators with R and
   Stata.
@@ -485,8 +430,12 @@ French (native), English (fluent), Spanish (basic)
 
 \vspace{2cm}
 
+\begin{verbatim}
+## [1] "English_United States.1252"
+\end{verbatim}
+
 \begin{center}
-CV last updated on July 13, 2021
+CV last updated on July 14, 2021
 \end{center}
 
 \end{document}

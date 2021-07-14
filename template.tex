@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage{tgpagella}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\definecolor{mygray}{gray}{0.4}
+\definecolor{mygraybox}{gray}{0.99}
+\definecolor{mygrayboxborder}{gray}{0.8}
+\usepackage[$geometry$]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    allcolors = blue
+}
+
+%% Multi column layout
+%% See: https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html
+
+\newenvironment{cols}[1][]{}{}
+
+\newenvironment{col}[1]{\begin{minipage}{#1}\ignorespaces}{%
+\end{minipage}
+\ifhmode\unskip\fi
+\aftergroup\useignorespacesandallpars}
+
+\def\useignorespacesandallpars#1\ignorespaces\fi{%
+#1\fi\ignorespacesandallpars}
+
+\makeatletter
+\def\ignorespacesandallpars{%
+  \@ifnextchar\par
+    {\expandafter\ignorespacesandallpars\@gobble}%
+    {}%
+}
+\makeatother
+
+%% Modify \section so that it automatically includes a line below
+
+\newcommand{\sectionline}{%
+  \vspace{-0.2cm}%
+  \hrule%
+  \vspace{0.3cm}%
+}
+
+\let\xsection=\section
+\renewcommand{\section}[1]{%
+  \xsection*{#1}%
+  \sectionline%
+}
+
+
+%% Create box for contact info
+\usepackage{tcolorbox}
+
+\newtcolorbox{blackbox}{
+  colback=mygraybox,
+  colframe=mygrayboxborder,
+  coltext=black,
+  boxsep=2pt,
+  arc=4pt}
+  
+%% Text in the middle of a rule (see bottom of CV)
+\makeatletter
+\def\myrulefill{\leavevmode\leaders\hrule height .7ex width 1ex depth -0.6ex\hfill\kern\z@}
+\makeatother
+
+%% Correct a pandoc bug
+%% https://tex.stackexchange.com/a/257464
+\def\tightlist{}
+
+
+    
+\begin{document}
+    
+$body$
+
+\end{document}
