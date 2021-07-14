@@ -13,32 +13,14 @@ library(dplyr)
 entries <- read.csv("entries.csv", sep = ";")
 ```
 
-\begin{center}
-\huge{Etienne Bacher}
+\noindent\textbf{\LARGE{Etienne Bacher}}
 \vspace{0.2cm}
 
-\Large{\textcolor{mygray}{PhD student in Economics of Migration}}
-\end{center}
+\noindent Luxembourg Institute of Socio-Economic Research 
 
-:::: {.blackbox data-latex=""}
-:::{.center data-latex=""}
-***Contact***
-:::
-::: {.cols data-latex=""}
-::: {.col data-latex="{0.05\textwidth}"}
-\ 
-:::
-::: {.col data-latex="{0.35\textwidth}"}
-\faEnvelope \hspace{0.1cm} \href{mailto:etienne.bacher@liser.lu}{etienne.bacher@liser.lu}
-:::
-::: {.col data-latex="{0.30\textwidth}"}
-\faGlobe \hspace{0.1cm} \href{https://www.etiennebacher.com/}{etiennebacher.com} 
-:::
-::: {.col data-latex="{0.25\textwidth}"}
-\faGithub \hspace{0.1cm} \href{https://github.com/etiennebacher/}{etiennebacher} 
-:::
-:::
-::::
+\noindent 11, Porte des Sciences \hfill \href{mailto:etienne.bacher@liser.lu}{\texttt{etienne.bacher@liser.lu}}
+
+\noindent L-4366 Esch-sur-Alzette/Belval \hfill \href{https://www.etiennebacher.com/}{\texttt{www.etiennebacher.com}}
 
 
 # Education
