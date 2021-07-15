@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{parskip}
 \usepackage{tgpagella}
 \usepackage{fontawesome}
 \usepackage{ragged2e}
@@ -39,8 +40,8 @@
 %% Modify \section so that it automatically includes a line below
 
 \newcommand{\sectionline}{%
-  \vspace{-0.2cm}%
-  \hrule%
+  \vspace{-0.5cm}%
+  \par\noindent\rule{\textwidth}{0.4pt}%
   \vspace{0.3cm}%
 }
 
@@ -51,16 +52,6 @@
 }
 
 
-%% Create box for contact info
-\usepackage{tcolorbox}
-
-\newtcolorbox{blackbox}{
-  colback=mygraybox,
-  colframe=mygrayboxborder,
-  coltext=black,
-  boxsep=2pt,
-  arc=4pt}
-  
 %% Text in the middle of a rule (see bottom of CV)
 \makeatletter
 \def\myrulefill{\leavevmode\leaders\hrule height .7ex width 1ex depth -0.6ex\hfill\kern\z@}

@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{parskip}
 \usepackage{tgpagella}
 \usepackage{fontawesome}
 \usepackage{ragged2e}
@@ -39,8 +40,8 @@
 %% Modify \section so that it automatically includes a line below
 
 \newcommand{\sectionline}{%
-  \vspace{-0.2cm}%
-  \hrule%
+  \vspace{-0.5cm}%
+  \par\noindent\rule{\textwidth}{0.4pt}%
   \vspace{0.3cm}%
 }
 
@@ -51,16 +52,6 @@
 }
 
 
-%% Create box for contact info
-\usepackage{tcolorbox}
-
-\newtcolorbox{blackbox}{
-  colback=mygraybox,
-  colframe=mygrayboxborder,
-  coltext=black,
-  boxsep=2pt,
-  arc=4pt}
-  
 %% Text in the middle of a rule (see bottom of CV)
 \makeatletter
 \def\myrulefill{\leavevmode\leaders\hrule height .7ex width 1ex depth -0.6ex\hfill\kern\z@}
@@ -74,14 +65,14 @@
     
 \begin{document}
     
-\noindent\textbf{\LARGE{Etienne Bacher}} \vspace{0.2cm}
+\textbf{\huge{Etienne Bacher}} \vspace{0.2cm}
 
-\noindent Luxembourg Institute of Socio-Economic Research
+Luxembourg Institute of Socio-Economic Research
 
-\noindent 11, Porte des Sciences
+11, Porte des Sciences
 \hfill \href{mailto:etienne.bacher@liser.lu}{\texttt{etienne.bacher@liser.lu}}
 
-\noindent L-4366 Esch-sur-Alzette/Belval
+L-4366 Esch-sur-Alzette/Belval
 \hfill \href{https://www.etiennebacher.com/}{\texttt{www.etiennebacher.com}}
 
 \hypertarget{education}{%
@@ -397,12 +388,8 @@ French (native), English (fluent), Spanish (basic)
 
 \vspace{2cm}
 
-\begin{verbatim}
-## [1] "English_United States.1252"
-\end{verbatim}
-
 \begin{center}
-CV last updated on July 14, 2021
+CV last updated on July 15, 2021
 \end{center}
 
 \end{document}
