@@ -47,6 +47,7 @@
 
 \let\xsection=\section
 \renewcommand{\section}[1]{%
+  \vspace{0.4cm}%
   \xsection*{#1}%
   \sectionline%
 }
@@ -62,7 +63,9 @@
 \def\tightlist{}
 
 
-    
+% Remove page numbers
+\pagenumbering{gobble}
+
 \begin{document}
     
 $body$
