@@ -47,6 +47,7 @@
 
 \let\xsection=\section
 \renewcommand{\section}[1]{%
+  \vspace{0.4cm}%
   \xsection*{#1}%
   \sectionline%
 }
@@ -62,7 +63,9 @@
 \def\tightlist{}
 
 
-    
+% Remove page numbers
+\pagenumbering{gobble}
+
 \begin{document}
     
 \textbf{\huge{Etienne Bacher}} \vspace{0.2cm}
@@ -72,7 +75,7 @@ Luxembourg Institute of Socio-Economic Research
 11, Porte des Sciences
 \hfill \href{mailto:etienne.bacher@liser.lu}{\texttt{etienne.bacher@liser.lu}}
 
-L-4366 Esch-sur-Alzette/Belval
+L-4366 Esch-sur-Alzette/Belval, Luxembourg
 \hfill \href{https://www.etiennebacher.com/}{\texttt{www.etiennebacher.com}}
 
 \hypertarget{education}{%
@@ -126,8 +129,6 @@ PhD Candidate in Economics
   Topic: ``Cross-border labor mobility, attitudes and political
   preferences''
 \item
-  Member of Doctoral Training Unit ACROSS
-\item
   Supervisors: Michel Tenikue, Michel Beine
 \end{itemize}
 
@@ -166,38 +167,6 @@ Master's Degree for Research in Development Economics
 \begin{cols}
 
 \begin{col}{0.15\textwidth}
-~
-
-\end{col}
-
-\begin{col}{0.03\textwidth}
-~
-
-\end{col}
-
-\begin{col}{0.8\textwidth}
-
-\begin{itemize}
-\tightlist
-\item
-  Master's thesis: ``Immigration and altruistic behavior: a comparison
-  of immigrants' and natives' vote''. Use of survey data and
-  microeconometric methods (Heckman correction and matching methods)
-  using R.
-\item
-  Other work: ``Financial development and income inequalities: a
-  cross-sectional analysis''. Statistical analysis with a Principal
-  Components Analysis, use of cross-sectional data estimators with R and
-  Stata.
-\end{itemize}
-
-\end{col}
-
-\end{cols}
-
-\begin{cols}
-
-\begin{col}{0.15\textwidth}
 2017 -- 2018
 
 \end{col}
@@ -218,34 +187,6 @@ Bachelor's Degree in Development Economics
 \textcolor{mygray}{UCA, Clermont-Ferrand, France}
 
 \end{flushright}
-
-\end{col}
-
-\end{cols}
-
-\begin{cols}
-
-\begin{col}{0.15\textwidth}
-~
-
-\end{col}
-
-\begin{col}{0.03\textwidth}
-~
-
-\end{col}
-
-\begin{col}{0.8\textwidth}
-
-\begin{itemize}
-\tightlist
-\item
-  ``Does urbanization significantly impact economic growth?''. Use of
-  cross-sectional data estimators with EViews.
-\item
-  ``Poverty study in Malawi (2010-2013): a monetary approach''.
-  Statistical analysis using base R and survey data.
-\end{itemize}
 
 \end{col}
 
@@ -389,7 +330,7 @@ French (native), English (fluent), Spanish (basic)
 \vspace{2cm}
 
 \begin{center}
-CV last updated on July 15, 2021
+CV last updated on July 17, 2021
 \end{center}
 
 \end{document}

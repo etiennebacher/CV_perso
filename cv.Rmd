@@ -20,7 +20,7 @@ Luxembourg Institute of Socio-Economic Research
 
 11, Porte des Sciences \hfill \href{mailto:etienne.bacher@liser.lu}{\texttt{etienne.bacher@liser.lu}}
 
-L-4366 Esch-sur-Alzette/Belval \hfill \href{https://www.etiennebacher.com/}{\texttt{www.etiennebacher.com}}
+L-4366 Esch-sur-Alzette/Belval, Luxembourg \hfill \href{https://www.etiennebacher.com/}{\texttt{www.etiennebacher.com}}
 
 
 # Education
@@ -52,7 +52,11 @@ tmp$title,
 '
 :::
 :::
-:::
+:::',
+sep = "")
+if (length(tmp_details > 0)) {
+  cat(
+'
 ::: {.cols data-latex=""}
 ::: {.col data-latex="{0.15\\textwidth}"}
 \\ 
@@ -67,7 +71,7 @@ paste("* ", tmp_details, collapse = "\n"),
 :::
 ',
 sep = ""
-  )
+  )}
 }
 ```
 
@@ -118,6 +122,7 @@ tmp$title,
 \\ 
 :::
 ::: {.col data-latex="{0.8\\textwidth}"}\n',
+
 paste("* ", tmp_details, collapse = "\n"),
 '
 :::
