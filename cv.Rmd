@@ -16,11 +16,11 @@ entries <- read.csv("entries.csv", sep = ";")
 \textbf{\huge{Etienne Bacher}}
 \vspace{0.2cm}
 
-Luxembourg Institute of Socio-Economic Research 
+Luxembourg Institute of Socio-Economic Research \hfill \href{mailto:etienne.bacher@liser.lu}{\texttt{etienne.bacher@liser.lu}}
 
-11, Porte des Sciences \hfill \href{mailto:etienne.bacher@liser.lu}{\texttt{etienne.bacher@liser.lu}}
+11, Porte des Sciences \hfill \href{https://www.etiennebacher.com/}{\texttt{www.etiennebacher.com}}
 
-L-4366 Esch-sur-Alzette/Belval, Luxembourg \hfill \href{https://www.etiennebacher.com/}{\texttt{www.etiennebacher.com}}
+L-4366 Esch-sur-Alzette/Belval, Luxembourg \hfill \href{https://github.com/etiennebacher/}{\texttt{github.com/etiennebacher}}
 
 
 # Education
@@ -174,7 +174,7 @@ French (native), English (fluent), Spanish (basic)
 
 
 ```{r}
-Sys.setlocale("LC_TIME", "English") |> 
+Sys.setlocale("LC_TIME", "en_US.UTF-8") |> 
   invisible() # for date below
 ```
 
