@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  ping-pong:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger website rendering
