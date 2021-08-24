@@ -1,7 +1,7 @@
 type;title;institution;place;year1;year2;detail1;detail2;detail3
 education;PhD Candidate in Economics;LISER;Luxembourg;2020;current;"Topic: ""Cross-border labor mobility, attitudes and political preferences""";;Supervisors: Michel Tenikue, Michel Beine
-education;Master's Degree in Development Economics;UCA;Clermont-Ferrand, France;2018;2020;;;
-education;Bachelor's Degree in Development Economics;UCA;Clermont-Ferrand, France;2017;2018;;;
+education;Master's Degree in Development Economics;CERDI;Clermont-Ferrand, France;2018;2020;;;
+education;Bachelor's Degree in Development Economics;CERDI;Clermont-Ferrand, France;2017;2018;;;
 professional_experience;Internship as research assistant;CERDI;Clermont-Ferrand, France;2020;2020 \newline(2 months);Built a dataset on the sovereignty of small islands.;Created an application with R Shiny to explore this dataset.;
 professional_experience;Internship as research assistant;High-Commission for Planning;Rabat, Morocco;2019;2019 \newline(2 months);"Production of a report: ""Labor market and poverty in Morocco"" (in French & English)";Made the literature review, treated survey data, applied Econometric methods (logistic regression, probit model) using Stata on about 200,000 observations, and participated to the redaction.;
 conference;Population Association of America;;;2021;;Discussant;;
