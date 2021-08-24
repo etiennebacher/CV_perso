@@ -18,11 +18,9 @@ jobs:
       - name: Install dependencies
         run: Rscript -e 'install.packages(c("rmarkdown"))'
 
-      - name: Render Site
+      - name: Render CV
         run: Rscript -e 'rmarkdown::render("cv.Rmd")'
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
+        
       - name: Trigger website rendering
         if: success()
         run: |
