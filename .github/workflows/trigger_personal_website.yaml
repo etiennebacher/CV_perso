@@ -2,6 +2,8 @@ name: Trigger GHA on personal_website_distill
 
 on:
   push:
+    branches:
+      - master
 
 jobs:
   ping-pong:
