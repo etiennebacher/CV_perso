@@ -13,7 +13,7 @@ library(dplyr)
 entries <- read.csv("entries.csv", sep = ";")
 ```
 
-\textbf{\huge{Etienne Bacher}}
+\textbf{\huge{HELLO}}
 \vspace{0.2cm}
 
 Luxembourg Institute of Socio-Economic Research 
