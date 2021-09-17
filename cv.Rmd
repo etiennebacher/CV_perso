@@ -152,6 +152,10 @@ for (i in unique(entries_conf$year1)) {
 }
 ```
 
+# Relevant activities
+
+Co-organizer of the Economics of Migration [Junior seminar](https://sites.google.com/view/the-economics-of-migration/junior-seminar)
+
 
 # Computer skills
 
@@ -174,7 +178,7 @@ French (native), English (fluent), Spanish (basic)
 
 
 ```{r}
-Sys.setlocale("LC_TIME", "en_US.UTF-8") |> 
+Sys.setlocale("LC_TIME", "C") |> 
   invisible() # for date below
 ```
 
