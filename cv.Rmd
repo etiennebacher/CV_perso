@@ -154,7 +154,7 @@ for (i in unique(entries_conf$year1)) {
 
 # Relevant activities
 
-Co-organizer of the Economics of Migration [Junior seminar](https://sites.google.com/view/the-economics-of-migration/junior-seminar)
+Co-organizer of the [Economics of Migration Junior seminar](https://sites.google.com/view/the-economics-of-migration)
 
 
 # Computer skills
