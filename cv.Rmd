@@ -156,6 +156,9 @@ for (i in unique(entries_conf$year1)) {
 
 Co-organizer of the Economics of Migration [Junior seminar](https://sites.google.com/view/the-economics-of-migration/junior-seminar)
 
+# Teaching
+
+International Economics (Fall 2021), *3rd year Bachelor*
 
 # Computer skills
 
