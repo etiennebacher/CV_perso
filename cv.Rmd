@@ -133,6 +133,10 @@ sep = ""
 }
 ```
 
+# Works in progress
+
+**Do anti-immigration attitudes discourage migrants from coming?**, *with Michel Beine and Hillel Rapoport*
+
 
 # Conferences
 
