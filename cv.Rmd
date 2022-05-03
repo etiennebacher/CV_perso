@@ -180,16 +180,3 @@ International Economics (Fall 2021), *3rd year Bachelor*
 
 French (native), English (fluent), Spanish (basic)
 
-
-
-\vspace{2cm}
-
-
-```{r}
-Sys.setlocale("LC_TIME", "C") |> 
-  invisible() # for date below
-```
-
-\begin{center}
-CV last updated on `r format(Sys.Date(), format="%B %d, %Y")`
-\end{center}

@@ -5,6 +5,8 @@
 \usepackage{fontawesome}
 \usepackage{ragged2e}
 \usepackage{xcolor}
+\usepackage[lastpage,user]{zref}
+\usepackage{fancyhdr}
 \definecolor{mygray}{gray}{0.4}
 \definecolor{mygraybox}{gray}{0.99}
 \definecolor{mygrayboxborder}{gray}{0.8}
@@ -53,18 +55,17 @@
 }
 
 
-%% Text in the middle of a rule (see bottom of CV)
-\makeatletter
-\def\myrulefill{\leavevmode\leaders\hrule height .7ex width 1ex depth -0.6ex\hfill\kern\z@}
-\makeatother
-
 %% Correct a pandoc bug
 %% https://tex.stackexchange.com/a/257464
 \def\tightlist{}
 
+%% Footer
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage / \zpageref{LastPage}}
+\lfoot{Updated on \today}
 
-% Remove page numbers
-\pagenumbering{gobble}
 
 \begin{document}
     
@@ -106,9 +107,7 @@ PhD Candidate in Economics
 
 \end{flushright}
 
-
 \end{col}
-
 
 \end{cols}
 
@@ -135,9 +134,7 @@ PhD Candidate in Economics
   Supervisors: Michel Tenikue, Michel Beine
 \end{itemize}
 
-
 \end{col}
-
 
 \end{cols}
 
@@ -165,9 +162,7 @@ Master's Degree in Development Economics
 
 \end{flushright}
 
-
 \end{col}
-
 
 \end{cols}
 
@@ -195,9 +190,7 @@ Bachelor's Degree in Development Economics
 
 \end{flushright}
 
-
 \end{col}
-
 
 \end{cols}
 
@@ -228,9 +221,7 @@ Internship as research assistant
 
 \end{flushright}
 
-
 \end{col}
-
 
 \end{cols}
 
@@ -256,9 +247,7 @@ Internship as research assistant
   Created an application with R Shiny to explore this dataset.
 \end{itemize}
 
-
 \end{col}
-
 
 \end{cols}
 
@@ -286,9 +275,7 @@ Internship as research assistant
 
 \end{flushright}
 
-
 \end{col}
-
 
 \end{cols}
 
@@ -317,9 +304,7 @@ Internship as research assistant
   200,000 observations, and participated to the redaction.
 \end{itemize}
 
-
 \end{col}
-
 
 \end{cols}
 
@@ -363,11 +348,5 @@ International Economics (Fall 2021), \emph{3rd year Bachelor}
 \section{Languages}\label{languages}}
 
 French (native), English (fluent), Spanish (basic)
-
-\vspace{2cm}
-
-\begin{center}
-CV last updated on April 06, 2022
-\end{center}
 
 \end{document}
