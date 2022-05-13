@@ -149,9 +149,10 @@ for (i in rev(unique(entries_conf$year1))) {
     filter(year1 == i) %>% 
     mutate(detail1 = ifelse(detail1 != "", paste0(" (", detail1, ")\n\n"), paste0(detail1, "\n\n")))
 
+  tmp$detail1 <- gsub("\\n", "", tmp$detail1)
   
   cat(
-    "**", tmp$year1, "**: ", paste0(tmp$title, tmp$detail1),
+    "\n\n**", unique(tmp$year1), "**: ", paste0(tmp$title, tmp$detail1, collapse = ", "),
     sep = ""
   )
 }
