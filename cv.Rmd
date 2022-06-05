@@ -170,6 +170,10 @@ International Economics (Fall 2021), *3rd year Bachelor*
 
 **Advanced:** R
 
+  * Member of the [easystats team](https://github.com/easystats/)
+  
+  * Several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [conductor](https://github.com/etiennebacher/conductor), [prompter](https://github.com/etiennebacher/prompter)
+
 **Intermediate:** Stata, LaTeX, HTML, CSS
 
 **Basic:** Matlab, JavaScript, GAMS
