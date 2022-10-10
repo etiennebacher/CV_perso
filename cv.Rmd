@@ -137,6 +137,10 @@ sep = ""
 
 **Do anti-immigration attitudes discourage migrants from coming?**, *with Michel Beine and Hillel Rapoport*
 
+# Publications
+
+Patil, I., Makowski, D., Ben-Shachar, M. S., Wiernik, B., **Bacher, E.**, Lüdecke, D., (2022). datawizard: An R Package for Easy Data Preparation and Statistical Transformations. *Journal of Open Source Software*, 7(78), 4684, https://doi.org/10.21105/joss.04684
+
 
 # Conferences & workshops
 
