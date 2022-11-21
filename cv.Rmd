@@ -135,7 +135,7 @@ sep = ""
 
 # Works in progress
 
-**Do anti-immigration attitudes discourage migrants from coming?**, *with Michel Beine and Hillel Rapoport*
+**The vicious circle of xenophobia**, *with Michel Beine and Hillel Rapoport*
 
 # Publications
 
@@ -168,7 +168,14 @@ Co-organizer of the [Economics of Migration Junior seminar](https://sites.google
 
 # Teaching
 
-International Economics (Fall 2021), *3rd year Bachelor*
+Teaching Assistant:
+
+* International Economics (Fall 2021, Fall 2022), *3rd year Bachelor* (Prof. Michel Beine)
+
+Workshop:
+
+* Webscraping with R Selenium
+
 
 # Computer skills
 
