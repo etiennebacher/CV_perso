@@ -137,6 +137,8 @@ sep = ""
 
 **The vicious circle of xenophobia**, *with Michel Beine and Hillel Rapoport*
 
+**Populism and globalization**, *with Frédéric Docquier* 
+
 # Publications
 
 Patil, I., Makowski, D., Ben-Shachar, M. S., Wiernik, B., **Bacher, E.**, Lüdecke, D., (2022). datawizard: An R Package for Easy Data Preparation and Statistical Transformations. *Journal of Open Source Software*, 7(78), 4684, https://doi.org/10.21105/joss.04684
@@ -174,7 +176,7 @@ Teaching Assistant:
 
 Workshop:
 
-* Webscraping with R Selenium
+* Webscraping with RSelenium
 
 
 # Computer skills
@@ -183,7 +185,9 @@ Workshop:
 
   * Member of the [easystats team](https://github.com/easystats/)
   
-  * Several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [conductor](https://github.com/etiennebacher/conductor), [prompter](https://github.com/etiennebacher/prompter)
+  * Author or maintainer of several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [conductor](https://github.com/etiennebacher/conductor), [datawizard](https://easystats.github.io/datawizard/), [prompter](https://github.com/etiennebacher/prompter)
+  
+  * Significant contributions to several R packages: [marginaleffects](https://vincentarelbundock.github.io/marginaleffects/), [poorman](https://nathaneastwood.github.io/poorman/), [WDI](https://vincentarelbundock.github.io/WDI/).
 
 **Intermediate:** Stata, LaTeX, HTML, CSS
 
