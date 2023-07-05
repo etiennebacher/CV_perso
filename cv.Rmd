@@ -187,7 +187,7 @@ Workshop:
   
   * Author or maintainer of several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [conductor](https://github.com/etiennebacher/conductor), [datawizard](https://easystats.github.io/datawizard/), [prompter](https://github.com/etiennebacher/prompter)
   
-  * Significant contributions to several R packages: [marginaleffects](https://vincentarelbundock.github.io/marginaleffects/), [poorman](https://nathaneastwood.github.io/poorman/), [WDI](https://vincentarelbundock.github.io/WDI/).
+  * Significant contributions to several R packages: [marginaleffects](https://vincentarelbundock.github.io/marginaleffects/), [polars](https://rpolars.github.io/), [poorman](https://nathaneastwood.github.io/poorman/), [WDI](https://vincentarelbundock.github.io/WDI/).
 
 **Intermediate:** Stata, LaTeX, HTML, CSS
 
