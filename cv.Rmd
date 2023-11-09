@@ -10,7 +10,7 @@ geometry: margin=2cm
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(dplyr)
 
-entries <- read.csv("entries.csv", sep = ";")
+entries <- readr::read_csv("entries.csv")
 ```
 
 \textbf{\huge{Etienne Bacher}}
@@ -31,7 +31,7 @@ entries_educ <- entries %>%
 
 for (i in 1:nrow(entries_educ)) {
   tmp <- entries_educ[i, ] %>% 
-    select(where(~ .x != ""))
+    select(where(~ .x != "" & !is.na(.x)))
   tmp_details <- tmp[which(grepl("detail", names(tmp)))]
   cat('
 ::: {.cols data-latex=""}
@@ -84,7 +84,7 @@ entries_pro <- entries %>%
 for (i in 1:nrow(entries_pro)) {
   
   tmp <- entries_pro[i, ] %>% 
-    select(where(~ .x != ""))
+    select(where(~ .x != "" & !is.na(.x)))
   
   tmp_details <- tmp[which(grepl("detail", names(tmp)))]
   
@@ -137,11 +137,13 @@ sep = ""
 
 **The vicious circle of xenophobia**, *with Michel Beine and Hillel Rapoport*
 
-**Populism and globalization**, *with Frédéric Docquier* 
+**Populist leaders and international migration**
 
 # Publications
 
-Patil, I., Makowski, D., Ben-Shachar, M. S., Wiernik, B., **Bacher, E.**, Lüdecke, D., (2022). datawizard: An R Package for Easy Data Preparation and Statistical Transformations. *Journal of Open Source Software*, 7(78), 4684, https://doi.org/10.21105/joss.04684
+1. **Bacher, E.**, Herrera-Rodriguez, M., Marino Fages, D., Stips, F., (2023). A Replication of Jones & Marinescu (2022), *I4R Discussion Paper Series* n°80 
+
+2. Patil, I., Makowski, D., Ben-Shachar, M. S., Wiernik, B., **Bacher, E.**, Lüdecke, D., (2022). datawizard: An R Package for Easy Data Preparation and Statistical Transformations. *Journal of Open Source Software*, 7(78), 4684, https://doi.org/10.21105/joss.04684
 
 
 # Conferences & workshops
@@ -153,7 +155,7 @@ entries_conf <- entries %>%
 for (i in rev(unique(entries_conf$year1))) {
   tmp <- entries_conf %>% 
     filter(year1 == i) %>% 
-    mutate(detail1 = ifelse(detail1 != "", paste0(" (", detail1, ")\n\n"), paste0(detail1, "\n\n")))
+    mutate(detail1 = ifelse(!is.na(detail1), paste0(" (", detail1, ")\n\n"), "\n\n"))
 
   tmp$detail1 <- gsub("\\n", "", tmp$detail1)
   
@@ -172,7 +174,7 @@ Co-organizer of the [Economics of Migration Junior seminar](https://sites.google
 
 Teaching Assistant:
 
-* International Economics (Fall 2021, Fall 2022), *3rd year Bachelor* (Prof. Michel Beine)
+* International Economics (Fall 2021, 2022, 2023), *3rd year Bachelor* (Prof. Michel Beine)
 
 Workshop:
 
@@ -185,7 +187,7 @@ Workshop:
 
   * Member of the [easystats team](https://github.com/easystats/)
   
-  * Author or maintainer of several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [conductor](https://github.com/etiennebacher/conductor), [datawizard](https://easystats.github.io/datawizard/), [prompter](https://github.com/etiennebacher/prompter)
+  * Author or maintainer of several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [conductor](https://github.com/etiennebacher/conductor), [datawizard](https://easystats.github.io/datawizard/), [prompter](https://github.com/etiennebacher/prompter), [tidypolars](https://tidypolars.etiennebacher.com/)
   
   * Significant contributions to several R packages: [marginaleffects](https://vincentarelbundock.github.io/marginaleffects/), [polars](https://rpolars.github.io/), [poorman](https://nathaneastwood.github.io/poorman/), [WDI](https://vincentarelbundock.github.io/WDI/).
 
