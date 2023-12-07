@@ -135,15 +135,17 @@ sep = ""
 
 # Works in progress
 
-**The vicious circle of xenophobia**, *with Michel Beine and Hillel Rapoport*
+**The vicious circle of xenophobia**, *with [Michel Beine](https://sites.google.com/site/michelbeineeconomics/home) and [Hillel Rapoport](https://www.parisschoolofeconomics.eu/en/rapoport-hillel/)*
 
 **Populist leaders and international migration**
+
+**Migrants' voices**, *with [Martín Fernández Sánchez](https://sites.google.com/view/martinfernandezsanchez/)*
 
 # Publications
 
 1. **Bacher, E.**, Herrera-Rodriguez, M., Marino Fages, D., Stips, F., (2023). A Replication of Jones & Marinescu (2022), *I4R Discussion Paper Series* n°80 
 
-2. Patil, I., Makowski, D., Ben-Shachar, M. S., Wiernik, B., **Bacher, E.**, Lüdecke, D., (2022). datawizard: An R Package for Easy Data Preparation and Statistical Transformations. *Journal of Open Source Software*, 7(78), 4684, https://doi.org/10.21105/joss.04684
+1. Patil, I., Makowski, D., Ben-Shachar, M. S., Wiernik, B., **Bacher, E.**, Lüdecke, D., (2022). datawizard: An R Package for Easy Data Preparation and Statistical Transformations. *Journal of Open Source Software*, 7(78), 4684, https://doi.org/10.21105/joss.04684
 
 
 # Conferences & workshops
@@ -168,7 +170,9 @@ for (i in rev(unique(entries_conf$year1))) {
 
 # Relevant activities
 
-Co-organizer of the [Economics of Migration Junior seminar](https://sites.google.com/view/the-economics-of-migration)
+* Co-organizer of the [Economics of Migration Junior seminar](https://sites.google.com/view/the-economics-of-migration)
+
+* Member of the scientific committee of the Junior Workshop on the Economics of Migration (2023, 2024)
 
 # Teaching
 
@@ -179,7 +183,6 @@ Teaching Assistant:
 Workshop:
 
 * Webscraping with RSelenium
-
 
 # Computer skills
 
