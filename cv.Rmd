@@ -170,9 +170,9 @@ for (i in rev(unique(entries_conf$year1))) {
 
 # Relevant activities
 
-* Co-organizer of the [Economics of Migration Junior seminar](https://sites.google.com/view/the-economics-of-migration)
+* Co-organizer of the [online Economics of Migration Junior seminar](https://sites.google.com/view/the-economics-of-migration) since 2021
 
-* Member of the scientific committee of the Junior Workshop on the Economics of Migration (2023, 2024)
+* Member of the scientific committee of the (in-person) Junior Workshop on the Economics of Migration (2023, 2024)
 
 # Teaching
 
@@ -188,9 +188,7 @@ Workshop:
 
 **Advanced:** R
 
-  * Member of the [easystats team](https://github.com/easystats/)
-  
-  * Author or maintainer of several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [conductor](https://github.com/etiennebacher/conductor), [datawizard](https://easystats.github.io/datawizard/), [prompter](https://github.com/etiennebacher/prompter), [tidypolars](https://tidypolars.etiennebacher.com/)
+  * Author or maintainer of several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [datawizard](https://easystats.github.io/datawizard/), [tidypolars](https://tidypolars.etiennebacher.com/)
   
   * Significant contributions to several R packages: [marginaleffects](https://vincentarelbundock.github.io/marginaleffects/), [polars](https://rpolars.github.io/), [poorman](https://nathaneastwood.github.io/poorman/), [WDI](https://vincentarelbundock.github.io/WDI/).
 
