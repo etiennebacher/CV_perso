@@ -75,7 +75,81 @@ sep = ""
 }
 ```
 
-# Professional experience
+
+# Working papers
+
+* "Populist leaders and international migration"
+
+# Work in progress
+
+* "Migrants' voices", *with [Martín Fernández](https://sites.google.com/view/martinfernandezsanchez/)*
+
+* "The vicious circle of xenophobia", *with [Michel Beine](https://sites.google.com/site/michelbeineeconomics/home) and [Hillel Rapoport](https://www.parisschoolofeconomics.eu/en/rapoport-hillel/)*
+
+
+# Publications
+
+1. **Bacher, E.**, Herrera-Rodriguez, M., Marino Fages, D., Stips, F., (2023). A Replication of Jones & Marinescu (2022), *I4R Discussion Paper Series* n°80 
+
+1. Patil, I., Makowski, D., Ben-Shachar, M. S., Wiernik, B., **Bacher, E.**, Lüdecke, D., (2022). datawizard: An R Package for Easy Data Preparation and Statistical Transformations. *Journal of Open Source Software*, 7(78), 4684, https://doi.org/10.21105/joss.04684
+
+
+# Conferences & workshops
+
+```{r, results='asis'}
+entries_conf <- entries %>%
+  filter(type == "conference")
+
+for (i in rev(unique(entries_conf$year1))) {
+  tmp <- entries_conf %>% 
+    filter(year1 == i) %>% 
+    mutate(detail1 = ifelse(!is.na(detail1), paste0(" (", detail1, ")\n\n"), "\n\n"))
+
+  tmp$detail1 <- gsub("\\n", "", tmp$detail1)
+  
+  cat(
+    "\n\n**", unique(tmp$year1), "**: ", paste0(tmp$title, tmp$detail1, collapse = ", "),
+    sep = ""
+  )
+}
+```
+
+# Relevant activities
+
+* Referee: *International Journal of Manpower*
+
+* Co-organizer of the [online Economics of Migration Junior seminar](https://sites.google.com/view/the-economics-of-migration) since 2021
+
+* Member of the scientific committee of the (in-person) Junior Workshop on the Economics of Migration (2023, 2024)
+
+
+# Teaching
+
+Teaching Assistant:
+
+* International Economics (Fall 2021, 2022, 2023), *3rd year Bachelor* (Prof. Michel Beine)
+
+Workshop:
+
+* Webscraping with RSelenium
+
+
+# Computer skills
+
+**Advanced:** R
+
+  * Author or maintainer of several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [datawizard](https://easystats.github.io/datawizard/), [tidypolars](https://tidypolars.etiennebacher.com/)
+  
+  * Significant contributions to several R packages: [marginaleffects](https://vincentarelbundock.github.io/marginaleffects/), [polars](https://rpolars.github.io/), [poorman](https://nathaneastwood.github.io/poorman/), [WDI](https://vincentarelbundock.github.io/WDI/).
+
+**Intermediate:** Stata, LaTeX, HTML, CSS
+
+**Basic:** Matlab, JavaScript, GAMS
+
+**Misc:** Ubuntu/Linux
+
+
+# Relevant work experience
 
 ```{r, results='asis'}
 entries_pro <- entries %>%
@@ -132,72 +206,6 @@ sep = ""
   )
 }
 ```
-
-# Works in progress
-
-**The vicious circle of xenophobia**, *with [Michel Beine](https://sites.google.com/site/michelbeineeconomics/home) and [Hillel Rapoport](https://www.parisschoolofeconomics.eu/en/rapoport-hillel/)*
-
-**Populist leaders and international migration**
-
-**Migrants' voices**, *with [Martín Fernández Sánchez](https://sites.google.com/view/martinfernandezsanchez/)*
-
-# Publications
-
-1. **Bacher, E.**, Herrera-Rodriguez, M., Marino Fages, D., Stips, F., (2023). A Replication of Jones & Marinescu (2022), *I4R Discussion Paper Series* n°80 
-
-1. Patil, I., Makowski, D., Ben-Shachar, M. S., Wiernik, B., **Bacher, E.**, Lüdecke, D., (2022). datawizard: An R Package for Easy Data Preparation and Statistical Transformations. *Journal of Open Source Software*, 7(78), 4684, https://doi.org/10.21105/joss.04684
-
-
-# Conferences & workshops
-
-```{r, results='asis'}
-entries_conf <- entries %>%
-  filter(type == "conference")
-
-for (i in rev(unique(entries_conf$year1))) {
-  tmp <- entries_conf %>% 
-    filter(year1 == i) %>% 
-    mutate(detail1 = ifelse(!is.na(detail1), paste0(" (", detail1, ")\n\n"), "\n\n"))
-
-  tmp$detail1 <- gsub("\\n", "", tmp$detail1)
-  
-  cat(
-    "\n\n**", unique(tmp$year1), "**: ", paste0(tmp$title, tmp$detail1, collapse = ", "),
-    sep = ""
-  )
-}
-```
-
-# Relevant activities
-
-* Co-organizer of the [online Economics of Migration Junior seminar](https://sites.google.com/view/the-economics-of-migration) since 2021
-
-* Member of the scientific committee of the (in-person) Junior Workshop on the Economics of Migration (2023, 2024)
-
-# Teaching
-
-Teaching Assistant:
-
-* International Economics (Fall 2021, 2022, 2023), *3rd year Bachelor* (Prof. Michel Beine)
-
-Workshop:
-
-* Webscraping with RSelenium
-
-# Computer skills
-
-**Advanced:** R
-
-  * Author or maintainer of several R packages: [altdoc](https://github.com/etiennebacher/altdoc), [datawizard](https://easystats.github.io/datawizard/), [tidypolars](https://tidypolars.etiennebacher.com/)
-  
-  * Significant contributions to several R packages: [marginaleffects](https://vincentarelbundock.github.io/marginaleffects/), [polars](https://rpolars.github.io/), [poorman](https://nathaneastwood.github.io/poorman/), [WDI](https://vincentarelbundock.github.io/WDI/).
-
-**Intermediate:** Stata, LaTeX, HTML, CSS
-
-**Basic:** Matlab, JavaScript, GAMS
-
-**Misc:** Ubuntu/Linux
-
 
 # Languages
 
