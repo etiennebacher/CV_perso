@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.2)  5 JUN 2024 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.2)  5 JUL 2024 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,18 +313,18 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10844 strings out of 476063
- 170760 string characters out of 5790599
- 1944496 words of memory out of 5000000
+ 10845 strings out of 476063
+ 170766 string characters out of 5790599
+ 1945496 words of memory out of 5000000
  32829 multiletter control sequences out of 15000+600000
  581886 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 63i,12n,67p,517b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,12n,67p,517b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/etienne/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/etienne/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb><c:/Users/etienne/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb><c:/Users/etienne/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv.pdf (3 pages, 190641 bytes).
+Output written on cv.pdf (3 pages, 191418 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
