@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.21)  8 SEP 2025 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.21)  12 JAN 2026 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,7 +316,9 @@ File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
 
 {/home/etienne/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/etienne/.TinyTeX/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}{/home/etienne/.TinyTeX/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm-sc.enc}{/home/etienne/.TinyTeX/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
 
-[2] (./cv.aux)
+[2]
+
+[3] (./cv.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
@@ -325,18 +327,18 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11128 strings out of 475178
- 174224 string characters out of 5766023
- 592809 words of memory out of 5000000
+ 11129 strings out of 475178
+ 174230 string characters out of 5766023
+ 590809 words of memory out of 5000000
  33983 multiletter control sequences out of 15000+600000
  582654 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 63i,11n,67p,517b,492s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,11n,67p,517b,494s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/etienne/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></home/etienne/.TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></home/etienne/.TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></home/etienne/.TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv.pdf (2 pages, 191304 bytes).
+Output written on cv.pdf (3 pages, 191309 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 87 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
