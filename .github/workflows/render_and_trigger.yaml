@@ -1,4 +1,4 @@
-name: Render CV.pdf, then trigger GHA on my_website
+name: Trigger GHA on my_website
 
 on:
   push:
